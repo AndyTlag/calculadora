@@ -10,4 +10,19 @@ public class Calculadora {
         resultado = (valor1 + valor2);
         return resultado;
     }
+
+    public double subtrair( double valor1, double valor2) {
+        resultado = (valor1 - valor2);
+        return resultado;
+    }
+
+    public double multiplicar( double valor1, double valor2) {
+        resultado = (valor1 * valor2);
+        return resultado;
+    }
+
+    public double dividir( double valor1, double valor2) {
+        resultado = (valor1 / valor2);
+        return resultado;
+    }
 }
