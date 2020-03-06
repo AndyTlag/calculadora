@@ -12,7 +12,8 @@ public class CalculadoraTest{
 
 
     //calculadora.somar(10.0, 25.0)
-        System.out.println("O valor da soma é = " + (valor.getResultado()));
+
+        System.out.println(MensagemValor.getMensagem(MensagemOperacao.SOMA_SUCESSO, valor));
     }
 
     @Test
@@ -21,7 +22,7 @@ public class CalculadoraTest{
         Valor valor = new Valor(10,20,0);
         Operacao.subtrair(valor);
 
-        System.out.println("O valor da subtração é = " + (valor.getResultado()));
+        System.out.println(MensagemValor.getMensagem(MensagemOperacao.SUBTRACAO_SUCESSO, valor));
     }
 
     @Test
@@ -30,7 +31,7 @@ public class CalculadoraTest{
         Valor valor = new Valor(10,20,0);
         Operacao.multiplicar(valor);
 
-        System.out.println("O valor da multiplicação é = " + (valor.getResultado()));
+        System.out.println(MensagemValor.getMensagem(MensagemOperacao.MULTIPLICACAO_SUCESSO, valor));
     }
 
     @Test
@@ -39,7 +40,7 @@ public class CalculadoraTest{
         Valor valor = new Valor(10,20,0);
         Operacao.dividir(valor);
 
-        System.out.println("O valor da divisão é = " + (valor.getResultado()));
+        System.out.println(MensagemValor.getMensagem(MensagemOperacao.DIVISAO_SUCESSO, valor));
     }
 
 }
