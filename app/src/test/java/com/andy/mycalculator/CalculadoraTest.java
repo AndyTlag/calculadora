@@ -1,38 +1,45 @@
 package com.andy.mycalculator;
 
-
 import org.junit.Test;
 
 public class CalculadoraTest{
 
     @Test
     public void calculadoraSomaSucesso(){
-    Calculadora calculadora = new Calculadora();
+        Operacao operacao =  new Operacao();
+        Valor valor = new Valor(10,20,0);
+        Operacao.somar(valor);
+
 
     //calculadora.somar(10.0, 25.0)
-        System.out.println("O valor da soma é = " + calculadora.somar(10.0, 25.0));
+        System.out.println("O valor da soma é = " + (valor.getResultado()));
     }
 
     @Test
-    public void calculadoraSubtraiSucesso(){
-        Calculadora calculadora = new Calculadora();
+    public void calculadoraSubtracaoSucesso(){
+        Operacao operacao =  new Operacao();
+        Valor valor = new Valor(10,20,0);
+        Operacao.subtrair(valor);
 
-        System.out.println("O valor da subtração é = " + calculadora.subtrair(10.0, 25.0));
+        System.out.println("O valor da subtração é = " + (valor.getResultado()));
     }
 
     @Test
-    public void calculadoraMultiplicaSucesso(){
-        Calculadora calculadora = new Calculadora();
+    public void calculadoraMultiplicacaoSucesso(){
+        Operacao operacao =  new Operacao();
+        Valor valor = new Valor(10,20,0);
+        Operacao.multiplicar(valor);
 
-
-        System.out.println("O valor da multiplicação é = " + calculadora.multiplicar(10.0, 25.0));
+        System.out.println("O valor da multiplicação é = " + (valor.getResultado()));
     }
+
     @Test
-    public void calculadoraDividirSucesso(){
-        Calculadora calculadora = new Calculadora();
+    public void calculadoraDivisaoSucesso(){
+        Operacao operacao =  new Operacao();
+        Valor valor = new Valor(10,20,0);
+        Operacao.dividir(valor);
 
-
-        System.out.println("O valor da divisão é = " + calculadora.dividir(10.0, 25.0));
+        System.out.println("O valor da divisão é = " + (valor.getResultado()));
     }
 
 }
